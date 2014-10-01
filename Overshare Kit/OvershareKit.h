@@ -25,7 +25,6 @@
 #import "OSKCopyToPasteboardActivity.h"
 #import "OSKEmailActivity.h"
 #import "OSKFacebookActivity.h"
-#import "OSKGooglePlusActivity.h"
 #import "OSKInstapaperActivity.h"
 #import "OSKLogger.h"
 #import "OSKManagedAccount.h"

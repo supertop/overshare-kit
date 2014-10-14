@@ -32,7 +32,7 @@
 }
 
 + (BOOL)isAvailable {
-    return [[UIDevice currentDevice] osk_airDropIsAvailable];
+    return YES;
 }
 
 + (NSString *)activityType {

@@ -8,7 +8,7 @@
 
 #import "OSKAirDropActivity.h"
 
-#import "UIDevice+OSKHardware.h"
+#import "JTSHardwareInfo.h"
 #import "OSKShareableContentItem.h"
 
 @interface OSKAirDropActivity ()

@@ -92,6 +92,8 @@ NSString * const OSKRPSTOnePasswordOpenWebURLHTTPS = @"ophttps://";
 + (NSURL *)passwordManagementAppCompleteURLForSearchQuery:(NSString *)query {
     NSURL *fullURL = nil;
     UIApplication *app = [UIApplication sharedApplication];
+    query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
     if ([app canOpenURL:[NSURL URLWithString:OSKRPSTOnePasswordSearch_v4_1b]]) {
         NSString *baseURL = OSKRPSTOnePasswordSearch_v4_1b;
         NSString *fullURLString = [NSString stringWithFormat:@"%@search/%@", baseURL, query];

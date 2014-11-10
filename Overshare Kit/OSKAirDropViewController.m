@@ -21,10 +21,7 @@
 - (instancetype)initWithAirDropItem:(OSKAirDropContentItem *)item {
     self = [super initWithActivityItems:item.items applicationActivities:nil];
     if (self) {
-        [self setExcludedActivityTypes:@[UIActivityTypePostToFacebook,
-                                         UIActivityTypePostToTwitter,
-                                         UIActivityTypeMessage,
-                                         UIActivityTypeMail]];
+        [self setExcludedActivityTypes:@[UIActivityTypeMessage]];
     }
     return self;
 }
